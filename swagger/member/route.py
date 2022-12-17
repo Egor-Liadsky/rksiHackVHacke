@@ -27,6 +27,6 @@ class Event(flask_restplus.Resource):
     def get(self, event_id):
         result = database.handler.Db().select_event_members(event_id)
         response = flask.Response(json.dumps(result), status=200)
-        return response
+        return response1
 
 
